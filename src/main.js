@@ -1,7 +1,7 @@
 // Kat Pe Bentio
 // Rocket Patrol: Reformed
 // new timing/scoring that adds time to clock + 15  DONE
-// mouse control for player movement + 15
+// randomized explosions + 10 DONE
 // particle explosion + 15 DONE
 // enemy spaceship + 15
 // time remaining on screen + 10 DONE
@@ -10,7 +10,7 @@
 // high score + 5 DONE
 // control after fired + 5 DONE
 
-// 70
+// 95 total
 let config = {
   type: Phaser.CANVAS,
   width: 640,
