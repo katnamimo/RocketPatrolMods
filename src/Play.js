@@ -12,8 +12,7 @@ class Play extends Phaser.Scene {
       this.load.image('starfield1', './assets/starfield1.png');
       this.load.image('starfield2', './assets/starfield2.png');
       this.load.image('particle', './assets/particle.png');
-
-      // load spritesheet
+    // load spritesheet
       this.load.spritesheet('explosion', './assets/explosion.png', {frameWidth: 64, frameHeight: 32, startFrame: 0, endFrame: 9});
    }
 
@@ -193,6 +192,7 @@ class Play extends Phaser.Scene {
       this.clock.delay += 5000;
 
       // play sound
-      this.sound.play('sfx_explosion', {volume: 0.5});
+      let explosionSound = "sfx_explosion" + Phaser.Math.Between(1, 4); // Randomly select one of the explosion sounds
+      this.sound.play(explosionSound, { volume: 0.5 });
    }
 }
