@@ -9,6 +9,8 @@
 // parallax scrolling for background + 10 DONE
 // high score + 5 DONE
 // control after fired + 5 DONE
+
+// 70
 let config = {
   type: Phaser.CANVAS,
   width: 640,
