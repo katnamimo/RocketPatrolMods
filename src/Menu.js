@@ -6,7 +6,7 @@ class Menu extends Phaser.Scene {
    preload() {
       // load audio
       this.load.audio("sfx_select", "./assets/blip_select12.wav");
-      
+      this.load.audio("backgroundmusic", "./assets/carnival.mp3");
       this.load.audio("sfx_rocket", "./assets/rocket_shot.wav");
       this.load.image('menuBackground', './assets/menuBackground.png');
       this.load.audio("sfx_explosion1", "./assets/explosion1.wav");
@@ -17,7 +17,8 @@ class Menu extends Phaser.Scene {
    create() {
       // Load and display the menu background image
       this.menuBackground = this.add.image(0, 0, 'menuBackground').setOrigin(0);
-   
+      this.backgroundMusic = this.sound.add('backgroundmusic');
+      this.backgroundMusic.play();
       // menu text config
       let menuConfig = {
          fontFamily: 'Courier',

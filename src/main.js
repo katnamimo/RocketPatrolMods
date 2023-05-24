@@ -1,5 +1,6 @@
 // Kat Pe Bentio
 // Rocket Patrol: Reformed
+// 8 hours est time
 // new timing/scoring that adds time to clock + 15  DONE
 // randomized explosions + 10 DONE
 // particle explosion + 15 DONE
@@ -9,8 +10,9 @@
 // parallax scrolling for background + 10 DONE
 // high score + 5 DONE
 // control after fired + 5 DONE
+// background music + 5 DONE
 
-// 95 total
+// 100 total
 let config = {
   type: Phaser.CANVAS,
   width: 640,
