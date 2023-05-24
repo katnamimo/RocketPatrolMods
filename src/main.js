@@ -1,15 +1,27 @@
+// Kat Pe Bentio
+// Rocket Patrol: Reformed
+// new timing/scoring that adds time to clock + 15  DONE
+// mouse control for player movement + 15
+// particle explosion + 15 DONE
+// enemy spaceship + 15
+// time remaining on screen + 10 DONE
+// new title screen + 10 DONE
+// parallax scrolling for background + 10 DONE
+// high score + 5 DONE
+// control after fired + 5 DONE
 let config = {
   type: Phaser.CANVAS,
   width: 640,
   height: 480,
-  scene: [ Menu, Play ]
+  scene: [Menu, Play]
 }
 
 let game = new Phaser.Game(config);
 
+// reserve keyboard bars
+let keyF, keyR, keyLEFT, keyRIGHT, keyUP, keyA, keyD, keyW;
+
 // set UI sizes
 let borderUISize = game.config.height / 15;
 let borderPadding = borderUISize / 3;
-
-// reserve keyboard variables
-let keyF, keyR, keyLEFT, keyRIGHT;
+let highscore = 0;
